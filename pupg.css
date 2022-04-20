@@ -1,0 +1,244 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-image: url(images/pupg.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.overlay{
+    width: 100%;
+    height: 700px;
+    background-color: #111;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    z-index: -9999;
+}
+.container {
+    opacity:0.8;
+    width:700px;
+    margin: 100px auto;
+    background-color: #b5b2b2;
+   /* padding: 30px;*/
+    border: 5px solid #e1be31;
+    transition: all 1s ease-in-out;
+    padding: 20px;
+    position: relative;
+
+
+}
+
+.container .form {
+    transition: all 3s ease-in-out;
+    margin: 20px;
+    opacity: 1;
+    
+
+}
+.form h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #161212
+}
+.form input {
+    margin-bottom: 15px;
+}
+ button {
+
+    font-size: 18px;
+    background-color: #e1be31;
+    color: #2c2525;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+/* .package{
+    display: none;
+} */
+.package button {
+    margin: 20px auto;
+    display: block;
+}
+ button:hover{
+    transform: scale(1.1);
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+/*.container:nth-of-type(2){
+    display: none;
+    border: none;
+}*/
+.images {
+    margin: 20px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*margin: 30px auto;*/
+}
+.images h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #161212;
+    background-color: #f9c729;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.images .image {
+    width: 30%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+.images .image:hover {
+    transform: scale(1.1);
+}
+.images .active{
+    transform: scale(1.1);
+
+}
+.image img {
+    width: 100%;
+    
+}
+.image i {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 30px;
+    background: #fff;
+    display: none;
+
+}
+.active i{
+    display: block;
+}
+.platform .image {
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+.container >img{
+    margin: 0 auto auto auto;
+    display: block;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container > h1{
+    text-align: center;
+    margin-top: 30px;
+}
+p.alert{
+    text-align: center;
+    border: 1px solid #d30909;
+    margin-bottom: 10px;
+    color: #d30909;
+    background: #e98080;
+    padding: 5px;
+    display: none;
+}
+.bar {
+    margin: 100px auto 50px auto;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    display: none;
+}
+.bar span{
+    width: 0;
+    height: 50px;
+    background-color: rgb(14, 230, 86);
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+.container .bar {
+    width: 90%;
+}
+h2 {
+    width: 90%;
+    margin: 30px auto;
+}
+.finish{
+    display: none;
+}
+.finish p{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 80px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.complete {
+    display: none;
+    color:rgb(151, 17, 17);
+    text-align: center;
+}
+@media (max-width:767px){
+    .container{
+        width: 80%;
+        padding: 5px;
+
+    }
+    .container >img{
+        width: 250px;
+        top: -60px;
+
+
+    }
+    .container >h1 {
+        font-size: 25px;
+    }
+    .images {
+        margin: 5px;
+    }
+    .images .image{
+        width: 44%;
+    }
+}
+@media (max-width:500px){
+    form h3{
+        font-size: 18px;
+    }
+    .images h2{
+        font-size: 18px;
+    }
+}
